@@ -7,7 +7,7 @@ if($_POST["contact-project"]) {
     mail("edwin.lang@aon.at", "Portfolio Homepage 2022", $_POST["contact-project"],  $headers);
 
 } */
-
+echo 'vor mailpruefung' . '<br>';
 $errors = '';
 $myemail = 'edwin.lang@aon.at';//<-----Put Your email address here.
 if(empty($_POST['contact-name'])  ||
@@ -25,6 +25,8 @@ $email_address))
 {
     $errors .= "\n Error: Invalid email address";
 }
+
+echo 'vor mailversand';
 
 if( empty($errors))
 {
