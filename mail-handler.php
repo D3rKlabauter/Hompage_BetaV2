@@ -52,6 +52,7 @@ if( empty($errors))
 <!-- This page is displayed only if there is some error -->
 <?php
 //echo nl2br($errors);
+	echo 'servas';
 ?>
 
 
