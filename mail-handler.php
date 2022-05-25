@@ -37,7 +37,8 @@ if( empty($errors))
     $headers .= "Reply-To: $email_address";
     mail($to,$email_subject,$email_body,$headers);
     //redirect to the 'thank you' page
-    header('Location: https://d3rklabauter.github.io/index.html');
+    	header('Content-Type: text/html');
+	header('Location: https://d3rklabauter.github.io/index.html');
 	exit;
 }
 
