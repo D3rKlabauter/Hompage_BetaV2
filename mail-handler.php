@@ -49,6 +49,8 @@ if( empty($errors))
 <!DOCTYPE html> 
 <html>
 <head>
+	<meta charset=UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Contact form handler</title>
 </head>
 
@@ -56,9 +58,8 @@ if( empty($errors))
 <!-- This page is displayed only if there is some error -->
 <?php
 echo nl2br($errors);
-echo 'servas';
+echo 'servas body';
 ?>
-
 
 </body>
 </html>
