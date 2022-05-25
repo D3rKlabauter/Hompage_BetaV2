@@ -40,7 +40,7 @@ if( empty($errors))
     mail($to,$email_subject,$email_body,$headers);
     //redirect to the 'thank you' page
     	header('Content-Type: text/html');
-	header('Referrer Policy: unsafe-url, no-referrer')
+	header('Referrer Policy: unsafe-url, no-referrer');
 	header('Location: https://d3rklabauter.github.io/index.html');
 	exit;
 }
