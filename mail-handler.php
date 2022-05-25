@@ -33,11 +33,12 @@ if( empty($errors))
     $email_body = "You have received a new message. ".
     " Here are the details:\n Name: $name \n ".
     "Email: $email_address\n Message \n $message";
-    $headers = "From: $myemail\n";
+    $headers = "From: $myemail\r\n";
     $headers .= "Reply-To: $email_address";
     mail($to,$email_subject,$email_body,$headers);
     //redirect to the 'thank you' page
-    header('Location: index.html\n');
+    header('Location: D3rKlabauter.github.io/index.html');
+	exit;
 }
 
 
@@ -51,8 +52,8 @@ if( empty($errors))
 <body>
 <!-- This page is displayed only if there is some error -->
 <?php
-//echo nl2br($errors);
-	echo 'servas';
+echo nl2br($errors);
+echo 'servas';
 ?>
 
 
