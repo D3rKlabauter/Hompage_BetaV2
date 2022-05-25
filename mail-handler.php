@@ -51,7 +51,7 @@ if( empty($errors))
 <body>
 <!-- This page is displayed only if there is some error -->
 <?php
-echo nl2br($errors);
+//echo nl2br($errors);
 ?>
 
 
